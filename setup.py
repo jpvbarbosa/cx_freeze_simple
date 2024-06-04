@@ -3,16 +3,16 @@ import sys
 
 # Dependencies are automatically detected, but it might need
 # fine tuning.
-build_options = {'packages': [], 'excludes': [], 'build_exe': "build-setuptools"}
+build_options = {'packages': [], 'excludes': [], 'build_exe': "build-setup"}
 
 executables = [
-    Executable('main.py', target_name="main_setuptools", base=None)
+    Executable('main.py', target_name="main_setup", base=None)
 ]
 
 print(sys.path)
 
-setup(name='Main-setuptools',
+setup(name='Main-setup',
       version = '1.0',
-      description = 'Main setuptool',
+      description = 'Main setup',
       options = {'build_exe': build_options},
       executables = executables)
