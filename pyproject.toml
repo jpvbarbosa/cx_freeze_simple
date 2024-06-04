@@ -1,0 +1,12 @@
+[project]
+name = "Main-pyproject"
+version = "1.0"
+description = "Main pyproject"
+
+[tool.cxfreeze]
+executables = [
+    {script = "main.py", target_name = "main-pyproject"}
+]
+
+[tool.cxfreeze.build_exe]
+build_exe = "build-pyproject"
